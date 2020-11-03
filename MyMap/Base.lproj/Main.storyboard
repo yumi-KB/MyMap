@@ -27,6 +27,12 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kyM-4K-SRc">
                                 <rect key="frame" x="0.0" y="74" width="414" height="788"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgi-MS-gDW">
+                                <rect key="frame" x="373" y="830" width="25" height="24"/>
+                                <connections>
+                                    <action selector="changeMapButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7B-w9-Bii"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -35,7 +41,9 @@
                             <constraint firstItem="FhB-c2-rJw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HN3-T2-hz9"/>
                             <constraint firstItem="kyM-4K-SRc" firstAttribute="top" secondItem="FhB-c2-rJw" secondAttribute="bottom" id="Mpt-te-voV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FhB-c2-rJw" secondAttribute="trailing" id="RM6-0x-GTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lgi-MS-gDW" secondAttribute="trailing" constant="16" id="Uzv-3C-4JA"/>
                             <constraint firstItem="FhB-c2-rJw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ag2-HQ-Sny"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lgi-MS-gDW" secondAttribute="bottom" constant="8" id="anZ-Jm-3mI"/>
                             <constraint firstItem="kyM-4K-SRc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jRa-8b-7Oz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kyM-4K-SRc" secondAttribute="trailing" id="x3n-ug-WeD"/>
                         </constraints>
